@@ -65,9 +65,6 @@ public class Authmail {
             if(u.getEmail().equals(authModel.getEmail()) && u.getPassword().equals(authModel.getPassword())){
                return new response(200,"Logged succesfully",u);
             }
-            else{
-                return new response(404,"User not found",u);
-            }
         }
     }   
         return new response(404,"no user in db",authModel);
